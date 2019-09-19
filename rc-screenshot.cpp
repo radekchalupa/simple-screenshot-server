@@ -4,11 +4,11 @@
 int main(int argc, char** argv)
 {
 	gtk_init(&argc, &argv);
-    GdkPixbuf* pixbuf;
-    GdkWindow* root_window;
+	GdkPixbuf* pixbuf;
+	GdkWindow* root_window;
 	GError* err = NULL;
-    gint x, y, width, height;
-    root_window = gdk_get_default_root_window();
+	gint x, y, width, height;
+	root_window = gdk_get_default_root_window();
 	if (!root_window)
 		return EXIT_FAILURE;
 	gdk_window_get_geometry(root_window, &x, &y, &width, &height);
